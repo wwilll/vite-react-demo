@@ -1,0 +1,38 @@
+{
+  "name": "vite-temp",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "tscdev": "tsc -w && vite",
+    "dev": "vite --host",
+    "buildtsc": "tsc && vite build",
+    "build": "vite build",
+    "buildes6": "cross-env target=es6 APP_BASE=foo vite build",
+    "buildmap": "cross-env target=es6 APP_BASE=foo soucemap=true vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "antd-mobile": "^5.12.5",
+    "cross-env": "^7.0.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "6",
+    "vite-plugin-prettier": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "@vitejs/plugin-react": "^1.3.0",
+    "autoprefixer": "^10.4.7",
+    "less": "^4.1.2",
+    "postcss": "^8.4.13",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-modules": "^4.3.1",
+    "postcss-px-to-viewport-8-plugin": "^1.1.3",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.7",
+    "vite-plugin-checker": "^0.4.6"
+  }
+}
